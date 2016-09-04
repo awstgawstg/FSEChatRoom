@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="author" content="Wayou">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>FSE ChatRoom</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="border">
+                <h1>FSE ChatRoom</h1>
+                <span id="status"></span>
+            </div>
+            <div id="msgBox">
+                <div id="preMsg">
+                </div>
+                <button id="showhistorybutton">Show History</button>
+            </div>
+            <div class="controls" >
+                <textarea id="messageInput" placeHolder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND">
+            </div>
+        </div>
+
+        <div id="loginPage">
+            <div>
+                <p>
+                    Welcome to FSE ChatRoom!
+                </p>
+                </div>
+            <p id="login"></p>
+            <div id="logindiv">
+                <input type="text" placeHolder="Username" id="username" />
+                <button id="loginBtn">Login</button>
+            </div>
+        </div>
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="FESChat.js"></script>
+        <script>
+
+    </script>
+    </body>
+</html>
