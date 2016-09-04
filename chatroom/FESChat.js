@@ -17,6 +17,8 @@ FSEChat.prototype = {
         this.socket.on('nameused', function() {
             document.getElementById('login').textContent = 'Please Choose Another Name';
         });
+
+
         this.socket.on('connect', function() {
             document.getElementById('login').textContent = 'Please Login First';
             document.getElementById('username').focus();
@@ -51,14 +53,6 @@ FSEChat.prototype = {
             };
         }, false);
 
-        document.getElementById('username').addEventListener('keyup', function(e) {
-            if (e.keyCode == 13) {
-                var userName = document.getElementById('username').value;
-                if (userName.trim().length != 0) {
-                    here.socket.emit('login', userName);
-                };
-            };
-        }, false);
 
         document.getElementById('sendBtn').addEventListener('click', function() {
             var messageInput = document.getElementById('messageInput'),
