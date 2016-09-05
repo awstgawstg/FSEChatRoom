@@ -1,3 +1,7 @@
+/**
+ * Created by dingzhang on 9/1/16.
+ */
+
 window.onload = function() {
     var fsechat = new FSEChat();
     fsechat.init();
